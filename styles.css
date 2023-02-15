@@ -1,5 +1,12 @@
 /** General CSS **/
 
+@font-face {
+    font-family: 'Ethnocentric';
+    src: url('./files/font/ethnocentric\ rg.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,14 +23,14 @@ h4,
 h5,
 h6 {
     color: #FFF;
-    font-family: 'Sono', sans-serif;
+    font-family: 'Ethnocentric';
     font-weight: 600;
 }
 
 p,
 a {
     color: #FFF;
-    font-family: 'Sono', sans-serif;
+    font-family: 'Ethnocentric';
     font-weight: 300;
 }
 
