@@ -377,7 +377,7 @@ nav #navbar-mobile {
 /** Home **/
 
 .home-page {
-    background-image: url(files/images/robot-photo .jpg);
+    background-image: url(files/images/robot-photo.jpg);
     background-position: center;
     background-size: cover;
 }
