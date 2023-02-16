@@ -25,6 +25,7 @@ h6 {
     color: #FFF;
     font-family: 'Ethnocentric';
     font-weight: 600;
+    font-size: 16px;
 }
 
 p,
@@ -32,6 +33,7 @@ a {
     color: #FFF;
     font-family: 'Ethnocentric';
     font-weight: 300;
+    font-size: 18px;
 }
 
 a {
@@ -117,7 +119,7 @@ nav #navbar-desktop {
 }
 
 #navbar-desktop .navbar-desktop-items h3 {
-    padding: calc(37.5px - 16.8px/2);
+    padding: calc(37.5px - 19.2px/2);
     background-color: transparent;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
@@ -126,7 +128,7 @@ nav #navbar-desktop {
 
 #navbar-desktop .navbar-desktop-items a:hover h3 {
     background-color: #7D419D;
-    padding: calc(37.5px - 16.8px/2 - 5px);
+    padding: calc(37.5px - 19.2px/2 - 5px);
     margin: 5px;
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
@@ -134,7 +136,7 @@ nav #navbar-desktop {
 
 #navbar-desktop .navbar-desktop-items .active {
     background-color: #3A0190;
-    padding: calc(37.5px - 16.8px/2 - 5px);
+    padding: calc(37.5px - 19.2px/2 - 5px);
     margin: 5px;
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
@@ -148,7 +150,7 @@ nav #navbar-desktop {
 }
 
 .navbar-desktop-sitename h2 {
-    padding: calc(37.5px - 21.6px/2) 0;
+    padding: calc(37.5px - 19.2px/2) 0;
 }
 
 
@@ -468,6 +470,7 @@ nav #navbar-mobile {
     transition: all .2s ease-in;
     z-index: 50;
     pointer-events: none;
+    font-size: 20px;
 }
 
 
@@ -491,11 +494,21 @@ nav #navbar-mobile {
     text-align: center;
     margin: 50px 30px;
     border-radius: 10px;
+    transition: all 0.3s ;
+    box-shadow: 10px 10px 10px #2f2f2f;
 }
+
+.team-page .block:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
 
 .team-page .block img {
     width: 90%;
     margin: 30px 0;
+    border: #6804c1 3px solid;
+    border-radius: 1000px;
 }
 
 .about-block .progression-bars {
