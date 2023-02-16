@@ -90,8 +90,8 @@ body {
 /** Navbar **/
 
 nav #navbar-desktop {
-    height: 60px;
-    background-color: transparent;
+    height: 75px;
+    background-color: #170132;
     position: fixed;
     top: 0;
     width: 100%;
@@ -117,18 +117,25 @@ nav #navbar-desktop {
 }
 
 #navbar-desktop .navbar-desktop-items h3 {
-    padding: calc(30px - 26.4px/2 - 5px);
-    margin: 10px;
-    background-color: #ffffff2f;
+    padding: calc(37.5px - 16.8px/2);
+    background-color: transparent;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
     text-align: center;
 }
 
 #navbar-desktop .navbar-desktop-items a:hover h3 {
-    background-color: #ffffff64;
-    padding: calc(30px - 26.4px/2 - 5px);
-    margin: 10px;
+    background-color: #7D419D;
+    padding: calc(37.5px - 16.8px/2 - 5px);
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+#navbar-desktop .navbar-desktop-items .active {
+    background-color: #3A0190;
+    padding: calc(37.5px - 16.8px/2 - 5px);
+    margin: 5px;
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
 }
@@ -141,8 +148,7 @@ nav #navbar-desktop {
 }
 
 .navbar-desktop-sitename h2 {
-    padding: calc(30px - 28.8px/2 - 5px) 0;
-    margin: 10px 0;
+    padding: calc(37.5px - 21.6px/2) 0;
 }
 
 
@@ -217,7 +223,7 @@ nav #navbar-desktop {
 
 nav #navbar-mobile {
     height: 60px;
-    background-color: transparent;
+    background-color: #170132;
     position: fixed;
     top: 0;
     width: 100%;
@@ -245,18 +251,42 @@ nav #navbar-mobile {
 #navbar-mobile .navbar-mobile-items h3 {
     padding: calc(30px - 26.4px/2 - 5px);
     margin: 10px;
-    background-color: #ffffff2f;
+    background-color: transparent;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
     text-align: center;
 }
 
 #navbar-mobile .navbar-mobile-items a:hover h3 {
-    background-color: #ffffff64;
+    background-color: #7D419D;
     padding: calc(30px - 26.4px/2 - 5px);
     margin: 10px;
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
+}
+
+#navbar-mobile .navbar-mobile-items a > .openbtn {
+    font-size: 30px;
+    padding: calc(37.5px - 63.6px/2 - 5px);
+} 
+
+.nav-overlay .nav-overlay-content a .active {
+    color: #7D419D !important;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+
+
+#navbar-mobile .navbar-mobile-items a > .openbtn {
+    font-size: 30px;
+    padding: calc(37.5px - 63.6px/2 - 5px);
+}
+
+#navbar-mobile .navbar-mobile-items a:hover > .openbtn {
+    font-size: 30px;
+    padding: calc(37.5px - 63.6px/2 - 5px);
 }
 
 .navbar-mobile-sitename {
@@ -280,7 +310,7 @@ nav #navbar-mobile {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #141414;
+    background-color: #170132;
     overflow-y: hidden;
     transition: 0.5s;
 }
@@ -361,124 +391,16 @@ canvas {
 
 
 
-/** Animations **/
-
-@keyframes load-animation {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.t1 {
-    opacity: 0;
-    animation: load-animation 1s ease-out 0s 1 normal forwards;
-}
-
-.t2 {
-    opacity: 0;
-    animation: load-animation 1s ease-out 0.2s 1 normal forwards;
-}
-
-.t3 {
-    opacity: 0;
-    animation: load-animation 1s ease-out 0.4s 1 normal forwards;
-}
-
-.t4 {
-    opacity: 0;
-    animation: load-animation 1s ease-out 0.6s 1 normal forwards;
-}
-
-.t5 {
-    opacity: 0;
-    animation: load-animation 1s ease-out 0.8s 1 normal forwards;
-}
-
-.t6 {
-    opacity: 0;
-    animation: load-animation 1s ease-out 1.0s 1 normal forwards;
-}
-
-.t7 {
-    opacity: 0;
-    animation: load-animation 1s ease-out 1.2s 1 normal forwards;
-}
-
-.t8 {
-    opacity: 0;
-    animation: load-animation 1s ease-out 1.4s 1 normal forwards;
-}
-
-.t9 {
-    opacity: 0;
-    animation: load-animation 1s ease-out 1.6s 1 normal forwards;
-}
-
-.t10 {
-    opacity: 0;
-    animation: load-animation 1s ease-out 1.8s 1 normal forwards;
-}
-
-.t11 {
-    opacity: 0;
-    animation: load-animation 1s ease-out 2.0s 1 normal forwards;
-}
-
-.t12 {
-    opacity: 0;
-    animation: load-animation 1s ease-out 2.2s 1 normal forwards;
-}
-
-.t13 {
-    opacity: 0;
-    animation: load-animation 1s ease-out 2.4s 1 normal forwards;
-}
-
-.t14 {
-    opacity: 0;
-    animation: load-animation 1s ease-out 2.6s 1 normal forwards;
-}
-
-.t15 {
-    opacity: 0;
-    animation: load-animation 1s ease-out 2.8s 1 normal forwards;
-}
-
-.t16 {
-    opacity: 0;
-    animation: load-animation 1s ease-out 3.0s 1 normal forwards;
-}
-
-.t17 {
-    opacity: 0;
-    animation: load-animation 1s ease-out 3.2s 1 normal forwards;
-}
-
-.t18 {
-    opacity: 0;
-    animation: load-animation 1s ease-out 3.4s 1 normal forwards;
-}
-
-.t19 {
-    opacity: 0;
-    animation: load-animation 1s ease-out 3.6s 1 normal forwards;
-}
-
-.t20 {
-    opacity: 0;
-    animation: load-animation 1s ease-out 3.8s 1 normal forwards;
-}
-
-
-
 
 
 
 /** Home **/
+
+.home-page {
+    background-image: url(files/images/robot-photo-blur.jpeg);
+    background-position: center;
+    background-size: cover;
+}
 
 /** Home | Hero **/
 .home-page .hero {
@@ -548,12 +470,8 @@ canvas {
 
 /** About **/
 
-.about-page {
-    height: 200vh;
-}
-
 /** About | Hero **/
-.about-page .hero {
+.team-page .hero {
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
@@ -565,7 +483,7 @@ canvas {
     z-index: 50;
 }
 
-.about-page .hero h1 {
+.team-page .hero h1 {
     margin: 0px;
     padding: 0px;
     color: #FFF;
@@ -574,49 +492,28 @@ canvas {
     pointer-events: none;
 }
 
-.about-page .hero-arrow {
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: cover;
-    height: 5vh;
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 50;
-}
-
-.about-page .hero-arrow #scroll-arrow {
-    color: #FFF;
-}
-
-
 
 
 /** Content Block | About **/
 
-.about-block {
-    z-index: 75;
-    min-height: 90vh;
-    width: 90%;
-    margin: 8vh 5% 2vh 5%;
-    border-radius: 10px;
-    background-color: var(--white-trans1);
+.team-page .flex-box {
     display: flex;
     flex-direction: column;
     align-items: left center;
     justify-content: center;
 }
 
-.about-block h2 {
-    font-size: large;
-    margin-left: 30px;
+.team-page .block {
+    min-width: 300px;
+    width: 20%;
+    height: 50%;
+    min-height: 400px;
+    background-color: #7D419D;
 }
 
-.about-block p {
-    font-size: medium;
-    margin-left: 30px;
-    width: 75%;
+.team-page .block img {
+    width: 90%;
+    margin-left: 5%;
 }
 
 .about-block .progression-bars {
